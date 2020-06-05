@@ -24,4 +24,16 @@ spec:
         env:
         - name: APP_NAME
           value: BAR
-  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: bar-service
+spec:
+  selector:
+    app: bar-app
+  ports:
+    - name: bar
+      port: 8080
+      targetPort: 8080
+
