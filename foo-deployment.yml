@@ -24,4 +24,15 @@ spec:
         env:
         - name: APP_NAME
           value: FOO
-  
+---
+apiVersion: v1
+kind: Service
+metadata:
+  name: foo-service
+spec:
+  selector:
+    app: foo-app
+  ports:
+    - name: foo
+      port: 8080
+      targetPort: 8080
