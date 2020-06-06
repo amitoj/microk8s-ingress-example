@@ -10,7 +10,7 @@ spec:
   selector:
     matchLabels:
       app: foo-app
-  replicas: 2
+  replicas: 10
   template:
     metadata:
       labels:
@@ -36,3 +36,4 @@ spec:
     - name: foo
       port: 8080
       targetPort: 8080
+  type: ClusterIP

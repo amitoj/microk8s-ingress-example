@@ -10,9 +10,9 @@ spec:
       paths:
         - path: /foo
           backend:
-            serviceName: foo-app
+            serviceName: foo-service
             servicePort: 8080
         - path: /bar
           backend:
-            serviceName: bar-app
+            serviceName: bar-service
             servicePort: 8080
